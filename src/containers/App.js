@@ -15,7 +15,7 @@ function App() {
     //     }
     // }
 
-    const [robots, setRobots] = useState([])
+    const [, setRobots] = useState([])
     const [searchfield, setSearchfield] = useState("")
 
     // componentDidMount() {
