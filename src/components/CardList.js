@@ -16,7 +16,8 @@ const CardList = ({filteredRobots}) => {
                     if (user.name.toLocaleLowerCase().includes(filteredRobots)) {
                         return (<Card key={i} id={user.id} name={user.name} email={user.email}/>
                         )
-                     } 
+                     }
+                    return console.log("hi"); 
                     }
                 )
             }
