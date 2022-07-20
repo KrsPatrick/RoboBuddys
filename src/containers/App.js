@@ -1,12 +1,25 @@
 import React, {useState, useEffect} from "react";
+// import { connect } from "react-redux";
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import "./App.css"
 import Scroll from "../components/Scroll";
 
+// import { setSearchField } from "../actions";
 
+// const mapStateToProps = state => {
+//     return {
+//         searchField: state.setRobots.searchField
+//     }
+// }
 
-function App() {
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+//         onSearchChange: (event) => dispatch(setSearchField(event.target.value))
+        
+// }
+
+function App(props) {
     // constructor() {
     //     super()
     //     this.state = {
