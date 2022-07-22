@@ -5,6 +5,7 @@ import { createStore } from 'redux';
 import './index.css';
 import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import 'tachyons'
 import { searchRobots } from './reducers';
 
