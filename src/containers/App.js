@@ -27,7 +27,7 @@ function App(props) {
     //         searchfield: ""
     //     }
     // }
-
+    const [value,] = useState("")
     const [, setRobots] = useState([])
     const [searchfield, setSearchfield] = useState("")
 
@@ -40,8 +40,8 @@ function App(props) {
     useEffect(() => {
         fetch("https://jsonplaceholder.typicode.com/users")
             .then(response=> response.json())
-            .then(users =>setRobots(users), []);
-    })
+            .then(users =>setRobots(users));
+    }, [value])
 
     const onSearchChange = (event) => {
         setSearchfield(event.target.value);
