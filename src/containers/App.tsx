@@ -1,9 +1,12 @@
 import React, {useState, useEffect} from "react";
 // import { connect } from "react-redux";
-import CardList from "../components/CardList";
-import SearchBox from "../components/SearchBox";
+// @ts-ignore
+import CardList from "../components/CardList.tsx";
+// @ts-ignore
+import SearchBox from "../components/SearchBox.tsx";
 import "./App.css"
-import Scroll from "../components/Scroll";
+// @ts-ignore
+import Scroll from "../components/Scroll.tsx";
 
 // import { setSearchField } from "../actions";
 
@@ -19,7 +22,7 @@ import Scroll from "../components/Scroll";
         
 // }
 
-function App(props) {
+function App(props): JSX.Element {
     // constructor() {
     //     super()
     //     this.state = {
@@ -37,19 +40,18 @@ function App(props) {
     //     .then(users =>this.setState({robots: users}));
     // }
 
-    useEffect(() => {
+    useEffect((): void => {
         fetch("https://jsonplaceholder.typicode.com/users")
             .then(response=> response.json())
             .then(users =>setRobots(users));
     }, [value])
 
-    const onSearchChange = (event) => {
-        setSearchfield(event.target.value);
-        
+    const onSearchChange = (event): void => {
+        setSearchfield(event.target.value);  
     }
 
    
-    const filteredRobot = () => {return searchfield.toLocaleLowerCase();
+    const filteredRobot = (): string => {return searchfield.toLocaleLowerCase();
     }
 
     return (

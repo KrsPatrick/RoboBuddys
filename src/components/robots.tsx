@@ -1,4 +1,4 @@
-export const robots = [
+export const robots: object[] = [
   {
     id: 17,
     name: 'Leanne Graham',

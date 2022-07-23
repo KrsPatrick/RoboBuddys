@@ -1,4 +1,4 @@
-import { CHANGE_SEARCH_FIELD } from "./constants"
+import { CHANGE_SEARCH_FIELD } from "./constants.tsx"
 
 const initialState = {
     searchField: ''

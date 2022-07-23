@@ -1,6 +1,8 @@
 import React from "react";
-import Card from "./Card";
-import { robots } from "./robots";
+// @ts-ignore
+import Card from "./Card.tsx";
+// @ts-ignore
+import { robots } from "./robots.tsx";
 
 // function getRandomInt(min, max) {
 //     min = Math.ceil(min);
@@ -8,7 +10,7 @@ import { robots } from "./robots";
 //     return Math.floor(Math.random() * (max - min)) + min;
 //   }
 
-const CardList = ({filteredRobots}) => {
+const CardList = ({filteredRobots}): JSX.Element => {
     return (
         <div>
             {
